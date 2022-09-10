@@ -403,6 +403,19 @@ fill: var(--adress-color);}
 .footer-list ul a:hover,
 .footer-list ul a:focus {color: var(--buttons-links);}
 
+.footer-input-send{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-button{
+    width: 200px;
+    height: 50px;
+    background-color: var(--buttons-links);
+    outline: none;
+}
+
 .mail-tell {
     font-size: 14px;
     line-height: 1.8;
@@ -654,6 +667,12 @@ fill: var(--adress-color);}
     color:var(--buttons-links)
 }
 
+.checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .modal-span-checkbox{
     font-size: 14px;
     line-height: 1.8;
@@ -689,16 +708,19 @@ fill: var(--adress-color);}
 
 .modal-svg-border{
     cursor: pointer;
+    margin-right: 9px;
 }
 
 .modal-svg-focus{
     display: none;
+    cursor: pointer;
+    margin-right: 9px;
 }
 
 .modal-checkbox:checked + .modal-svg-border{
     display:none;
 }
 
-.modal-checkbox:checked + .modal-svg-focus .modal-svg-focus-icon{
-    display: block;
+.modal-checkbox:checked ~ .modal-svg-focus{
+    display: inline-block;
 }
