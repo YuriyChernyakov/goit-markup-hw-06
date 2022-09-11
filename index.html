@@ -298,53 +298,67 @@
   </section>
   </main>
   <footer class="footer">
-  <div class="container footer-list">
-    <div class="contacts-footer">
-        <a href="index.html" class="logo-footer"><span>Web</span>Studio</a>
-        <address>
-          <ul>
-        <li><a target="_blank" href="https://goo.gl/maps/uGCBGbxVBMCukeLk7">м. Київ, пр-т Лесі Українки, 26</a></li>
-        <li><a class="mail-tell" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="mail-tell" href="tell:+380961111111">+38 096 111 11 11</a></li>
-          </ul>
-      </address> 
+    <div class="container footer-list">
+        <div class="contacts-footer">
+            <a href="index.html" class="logo-footer"><span>Web</span>Studio</a>
+                <address>
+                    <ul>
+                        <li><a target="_blank" href="https://goo.gl/maps/uGCBGbxVBMCukeLk7">м. Київ, пр-т Лесі Українки,26</a></li>
+                        <li><a class="mail-tell" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="mail-tell" href="tell:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+        <div class="invite">
+            <h2>приєднуйтесь</h2>
+                <ul class="employer-logo">
+                    <li>
+                        <a href="https://www.instagram.com/" class="social-list">
+                            <svg width="20px" height="20px" aria-label="Інстаграм">
+                                <use href="./images/SVG/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" class="social-list">
+                            <svg width="20px" height="20px" aria-label="Твітер">
+                                <use href="./images/SVG/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/" class="social-list">
+                            <svg width="20px" height="20px" aria-label="Фейсбук">
+                                <use href="./images/SVG/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/" class="social-list">
+                            <svg width="20px" height="20px" aria-label="Лінкедін">
+                                <use href="./images/SVG/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        <div>
+        <form class="footer-div-inbut">
+          <label>
+            <span class="footer-input-span">Підпишіться на розсилку</span>
+            <input class="footer-input" name="Підписка" type="email" placeholder="E-mail" required>
+        </label>
+        <button type="submit" class="footer-button">
+            Підписатися
+            <svg width="24px" height="24px">
+                <use href="./images/SVG/symbol-defs.svg#icon-send"></use></svg>
+        </button>
+      </form>
     </div>
-      <div class="invite">
-      <h2>приєднуйтесь</h2>
-      <ul class="employer-logo">
-        <li>
-          <a href="https://www.instagram.com/" class="social-list">
-            <svg width="20px" height="20px" aria-label="Інстаграм">
-              <use href="./images/SVG/symbol-defs.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/" class="social-list">
-            <svg width="20px" height="20px" aria-label="Твітер">
-              <use href="./images/SVG/symbol-defs.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/" class="social-list">
-            <svg width="20px" height="20px" aria-label="Фейсбук">
-              <use href="./images/SVG/symbol-defs.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/" class="social-list">
-            <svg width="20px" height="20px" aria-label="Лінкедін">
-              <use href="./images/SVG/symbol-defs.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
     </div>
     </div>
-  </footer>
-  <div class="backdrop s-hidden" data-modal>
+    </footer>
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="modal-close" data-modal-close>
         <svg aria-label="Закрити вікно" class="modal-x" width="18" height="18">
@@ -374,7 +388,7 @@
         <label class="modal-label">
           <span class="modal-span">Пошта</span>
           <div class="modal-label-svg">
-          <input class="modal-input" name="Пошта" type="email">
+          <input class="modal-input" name="Пошта" type="email" required>
           <svg aria-label="Лист" width="18px" height="18px" class="modal-svg">
             <use href="./images/SVG/symbol-defs.svg#icon-email"></use>
           </svg>
@@ -385,7 +399,7 @@
         <textarea class="modal-textarea" name="Коментар" placeholder="Введіть текст"></textarea>
       </label>
       <label class="modal-label checkbox">
-        <input class="modal-checkbox" type="checkbox" name="Умови договору">
+        <input class="modal-checkbox" type="checkbox" name="Умови договору" required>
         <svg class="modal-svg-border" width="16px" height="15px">
           <use href="./images/SVG/symbol-defs.svg#icon-Vector"></use>
         </svg>

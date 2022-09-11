@@ -356,7 +356,10 @@ ul,ol {margin-top: 0; margin-bottom: 0; padding-left: 0}
     padding-top: 60px;
     padding-bottom: 60px;}
 
-.footer-list {display: flex;}
+.footer-list {
+    display: flex;
+    align-items: flex-start;
+}
 
 .footer-list .contacts-footer{
     display: flex;
@@ -381,7 +384,9 @@ ul,ol {margin-top: 0; margin-bottom: 0; padding-left: 0}
 
 .invite {display: flex;
     flex-direction: column;
-    margin-left: 70px;}
+    margin-left: 70px;
+    margin-right: 93px;
+}
 
 .invite h2 {
     font-weight: 700;
@@ -403,17 +408,52 @@ fill: var(--adress-color);}
 .footer-list ul a:hover,
 .footer-list ul a:focus {color: var(--buttons-links);}
 
-.footer-input-send{
+.footer-div-inbut{
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    align-items:flex-end;
+}
+
+.footer-input-span{
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--adress-color);
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+
+.footer-input{
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+    background-color: transparent;
+    margin-right: 12px;
+    padding: 15px;
+    color: var(--adress-color);
 }
 
 .footer-button{
     width: 200px;
     height: 50px;
     background-color: var(--buttons-links);
-    outline: none;
+    border-color: var(--buttons-links);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    color: var(--adress-color);
+    display: flex;
+    align-items: center;
+    padding: 0 28px;
+    gap: 10px;
 }
 
 .mail-tell {
@@ -574,6 +614,7 @@ fill: var(--adress-color);}
     background-color: var(--adress-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close:hover{
@@ -614,14 +655,17 @@ fill: var(--adress-color);}
 }
 
 .modal-input{
+    outline: none;
     width: 100%;
     height: 40px;
     padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea{
+    outline: none;
     width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -629,6 +673,7 @@ fill: var(--adress-color);}
     padding: 12px 16px;
     resize: none;
     margin-bottom: 20px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea::placeholder{
@@ -639,7 +684,6 @@ fill: var(--adress-color);}
 }
 
 .modal-textarea:focus{
-    outline: none;
     border-color: var(--buttons-links);
 }
 
@@ -652,7 +696,8 @@ fill: var(--adress-color);}
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
-    fill: var(--title-color)
+    fill: var(--title-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox{
@@ -689,15 +734,15 @@ fill: var(--adress-color);}
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    color:var(--adress-color)
+    color:var(--adress-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button:hover{
-    background-color: #188CE8;;
+    background-color: #188CE8;
 }
 
 .modal-input:focus{
-    outline: none;
     border: 1px solid #2196F3;
     border-radius: 4px;
 }
