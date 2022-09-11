@@ -26,7 +26,8 @@ ul,ol {margin-top: 0; margin-bottom: 0; padding-left: 0}
     --border-color: #EEEEEE;
     --border-header-color: #ECECEC;
     --bg-main: #C4C4C4;
-    --clients-border: #AFB1B8;}
+    --clients-border: #AFB1B8;
+    --color-blue-two: #188CE8;}
 
 .header {
     border: 1px solid var(--border-header-color)}
@@ -252,7 +253,7 @@ ul,ol {margin-top: 0; margin-bottom: 0; padding-left: 0}
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;}
+    color: var(--adress-color);}
 
 .our-team {background-color: var(--buttons-bg);
     padding-top: 94px;
@@ -478,7 +479,6 @@ fill: var(--adress-color);}
 }
 
 .button-list button {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -570,7 +570,7 @@ fill: var(--adress-color);}
     font-size: 18px;
     line-height: 1.6;
     letter-spacing: 0.03em;
-    color: white;
+    color: var(--adress-color);
     background-color: rgba(33, 150, 243, 0.9);
     padding-top: 63px;
     padding-bottom: 63px;
@@ -739,11 +739,11 @@ fill: var(--adress-color);}
 }
 
 .modal-button:hover{
-    background-color: #188CE8;
+    background-color: var(--color-blue-two);
 }
 
 .modal-input:focus{
-    border: 1px solid #2196F3;
+    border: 1px solid var(--buttons-links);
     border-radius: 4px;
 }
 
